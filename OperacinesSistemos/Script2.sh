@@ -15,7 +15,7 @@ echo "Aš pasirinkau skaičių tarp 1 ir 100. Ar galite jį atspėti?"
 # Ciklas, kol vartotojas atspės teisingą skaičių
 while [ $spėjimas -ne $target ]; do
     # Nuskaitomas vartotojo įvestis
-    read -p "Įveskite savo spėjimą: " spejimas
+    read -p "Įveskite savo spejima: " spejimas
 
     # Padidinamas bandymų skaitiklis
     bandymai=$(( bandymai + 1 ))
