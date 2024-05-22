@@ -13,7 +13,7 @@ echo "Sveiki atvykę į Skaičių Spėjimo Žaidimą!"
 echo "Aš pasirinkau skaičių tarp 1 ir 100. Ar galite jį atspėti?"
 
 # Ciklas, kol vartotojas atspės teisingą skaičių
-while [ $spėjimas -ne $target ]; do
+while [ $spejimas -ne $target ]; do
     # Nuskaitomas vartotojo įvestis
     read -p "Įveskite savo spejima: " spejimas
 
