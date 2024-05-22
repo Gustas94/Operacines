@@ -9,23 +9,23 @@ target=$(( RANDOM % 100 + 1 ))
 spejimas=0
 bandymai=0
 
-echo "Sveiki atvykę į Skaičių Spėjimo Žaidimą!"
-echo "Aš pasirinkau skaičių tarp 1 ir 100. Ar galite jį atspėti?"
+echo "Sveiki atvyke i Skaiciu Spejimo Zaidima!"
+echo "As pasirinkau skaiciu tarp 1 ir 100. Ar galite ji atspeti?"
 
 # Ciklas, kol vartotojas atspės teisingą skaičių
 while [ $spejimas -ne $target ]; do
     # Nuskaitomas vartotojo įvestis
-    read -p "Įveskite savo spejima: " spejimas
+    read -p "Iveskite savo spejima: " spejimas
 
     # Padidinamas bandymų skaitiklis
     bandymai=$(( bandymai + 1 ))
 
     # Patikrinama, ar spėjimas teisingas
     if [ $spejimas -lt $target ]; then
-        echo "Per mažas! Bandykite dar kartą."
+        echo "Per mazas! Bandykite dar karta."
     elif [ $spejimas -gt $target ]; then
-        echo "Per didelis! Bandykite dar kartą."
+        echo "Per didelis! Bandykite dar karta."
     else
-        echo "Sveikiname! Jūs atspėjote teisingą skaičių per $bandymai bandymus."
+        echo "Sveikiname! Jus atspejote teisinga skaiciu per $bandymai bandymus."
     fi
 done
